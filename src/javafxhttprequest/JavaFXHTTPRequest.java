@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -20,9 +21,11 @@ public class JavaFXHTTPRequest extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+          
         Scene scene = new Scene(root);
-        
+        stage.initStyle(StageStyle.DECORATED);
+        stage.setTitle("Simply my Details");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
