@@ -24,7 +24,7 @@ public class JavaFXHTTPRequest extends Application {
           
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.DECORATED);
-        stage.setTitle("Simply my Details");
+        stage.setTitle("Simply My Details");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
